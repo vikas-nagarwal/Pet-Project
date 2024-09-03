@@ -1,0 +1,462 @@
+<!--header animation-->
+<!--image animation-->
+<!--loder -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Care Services</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <script src="assets/js/script.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+
+    <script>  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"/>
+            
+            <style>
+                a {
+    text-decoration: none;
+}
+
+
+.news-cont
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*span,*/
+/*a,*/
+/*a:hover {*/
+/*  display: inline-block;*/
+/*  color: inherit;*/
+/*}*/
+/*span, a, a:hover {*/
+/*     display: inline-block; */
+/*    color: inherit;*/
+/*}*/
+
+.news-section {
+  padding: 90px 0;
+}
+
+.news-content {
+  padding: 40px 30px;
+}
+
+.news-item {
+  box-shadow: 0 0 15px #ededed;
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin-bottom: 40px;
+}
+
+.news-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 15px 0px #edeaea;
+}
+
+.newsimg img {
+  width: 100%;
+}
+
+.news_postdate {
+  color: #ff3a46;
+}
+
+.news-content h3 {
+  color: #233d63;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.news_authorinfo {
+  padding: 14px 0;
+  font-size: 14px;
+}
+
+.news_authorinfo i {
+  margin-right: 6px;
+}
+
+.news_authorinfo span:last-child {
+  float: right;
+}
+
+.news_authorinfo a {
+  color: #666;
+}
+
+.center .news-content {
+  background: linear-gradient(-120deg, #8758ff 0%, #614ef9 100%);
+}
+
+.center .news-content h3,
+.center .news-content p {
+  color: #fff;
+}
+
+.center .news_authorinfo a,
+.center .news_authorinfo i {
+  color: #fff;
+}
+
+.news-slide.owl-carousel .col-lg-4 {
+  max-width: 100%;
+  padding: 0;
+}
+
+.news-section .owl-theme .owl-nav [class*="owl-"] {
+  color: #333;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.small-title {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ff3a46;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.big-title {
+  letter-spacing: 0;
+  padding-bottom: 13px;
+  position: relative;
+  color: #233d63;
+  line-height: 50px;
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.main-title-box {
+  margin-bottom: 60px;
+}
+
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+.col-lg-4.col-md-6.wow.fadeInUp {
+    background-color: aquamarine;
+}
+
+
+            </style>
+  </head>
+  <body>
+      
+<!--loaders start-->
+         <div class="loader-bg" id="preloader">
+  <div class="loader-p"  id="ctn-preloader">
+  <img src="/assets/image/Dog.png">	
+  </div>
+</div>
+
+<!--top to bottom btn-->
+
+<a id="topbutton"></a>
+      <!--loader end-->
+    <nav class="navbar">
+<img src="/assets/image/logo.png" alt="logo" class="img-responsive">
+      <!--<img src="" />-->
+      <ul class="ulsec" id="topnav">
+          
+        <li class="lisec"><a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li class="lisec"><a href="/contact.html" target="_blank">Contact</a></li>
+        
+  
+        
+        <!--service section-->
+        <li class="lisec" onclick="toggleVillageList()" id="fdfdf">
+  <a href="#">Service</a>
+  
+          <ul class="homesec">
+         <li><a href="all-pets.html">All Pets</a></li>
+<li><a href="pets-detail.html">Pets Detail</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="faq.html">Faq page</a></li>
+<li><a href="pricing.html">Pricing Page</a></li>
+<li><a href="reservation.html">Reservation Page</a></li>
+<li><a href="ourteam.html">Our Team</a></li>
+<li><a href="our-blog.html">Our Blog</a></li>
+<li><a href="faq.html">Faq</a></li>
+<li><a href="blog.html">Blog Details</a></li>
+            </ul>
+        </li>
+        <!--service section end-->
+        <li class="lisec"><a href="/index.html" target="_blank">Career</a></li>
+        <li class="lisec"><a href="/Gallary.html" target="_blank">Gallery</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    
+    
+       <div class="contentpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-4">
+            <!--<h5>Contact Page</h5>-->
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="row" style="display: flex;">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <h5><a href="/index.html" target="_blank">Home</a></h5>
+                    <!--<h5>Back</h5>-->
+
+</div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="col-lg-6 col-md-6 col-8">
+<img src="/assets/image/pet.png" alt="image section" class="img-fluid" height="25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--blog start-->
+    
+    
+    
+    
+    
+    <section class="news-section">
+
+        <div class="container">
+         <div class="main-title-box text-center">
+                       <div class="small-title">Pets Blog</div>
+                       <h2 class="big-title">Our Latest Pets Blog</h2>
+                   </div>
+                   <div class="row">
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0ms">
+                           <div class="news-item">
+                               <div class="news_box">
+                                   <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                   <div class="news-content">
+                                      
+                                       <a href="#">
+                                           <h3>"The Evolution of Cricket: How Technology is Changing the Game"</h3>
+                                       </a>
+<p>Explore how technological advancements are transforming the sport of cricket. From digital scorecards to sophisticated analytics, see how innovation is enhancing the game.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                           <div class="news-item active">
+                               <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                <div class="news-content">
+                                     
+                                       <a href="#">
+                                           <h3> "Cricket Legends: The Most Inspiring Moments in Cricket History"
+</h3>
+                                       </a>
+<p>Take a trip down memory lane with a look at some of the most unforgettable moments and legends in cricket history. Celebrate the achievements and stories that have shaped the sport.</p>                                
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                           <div class="news-item">
+                               <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                <div class="news-content">
+                                   
+                                       <a href="#">
+                                           <h3>"From the Pitch to Your Screen: The Best Cricket Apps and Platforms"
+                                        </h3>
+                                       </a>
+<p>Find out which apps and platforms are revolutionizing the way cricket fans engage with the game. Discover the best tools for live scores, news, and fantasy leagues</p>                                  
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0ms">
+                           <div class="news-item">
+                               <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                <div class="news-content">
+                                     
+                                       <a href="#">
+                                           <h3>"Cricket Tactics 101: Essential Tips for Aspiring Players"
+                                        </h3>
+                                       </a>
+<p>Get practical advice on cricket tactics and techniques. Perfect for beginners and intermediate players, this guide covers essential tips to improve your game and strategy.</p>                                     
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                           <div class="news-item active">
+                               <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                <div class="news-content">
+                                    
+                                       <a href="#">
+                                           <h3>"Master the Game: Top Strategies for Fantasy Cricket Success"
+                                        </h3>
+                                       </a>
+<p>Discover the key strategies and tips to excel in fantasy cricket. Learn how to choose the best players, create winning teams, and stay ahead of the competition.</p>                                     
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                       <!--Single Blog Start-->
+                       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                           <div class="news-item">
+                               <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive" src="img.png" alt=""></div>
+                                <div class="news-content">
+                                       
+                                       <a href="#">
+                                           <h3>"The Rise of T20 Cricket: How Short-Format Games Are Shaping the Future"</h3>
+                                       </a>
+<p>Understand the impact of T20 cricket on the sport's future. Learn how this fast-paced format is changing game strategies, fan engagement, and the cricketing landscape.</p>                                      
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!--Single Blog End-->
+                   </div>
+               </div>
+           </div>
+   </section>
+    
+    <!--blog end-->
+    
+    
+    <div class="footer" style="background: linear-gradient(#000000, #562525), #5e4e4e; padding-top: 80px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="single_footer" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Services
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Lorem Ipsum</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Simply dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">The printing and typesetting</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Standard dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Type specimen book</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Page Link
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Lorem Ipsum</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Simply dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">The printing and typesetting</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Standard dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Type specimen book</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Subscribe today
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <div class="signup_form" style="margin-top: 15px;">
+            <form action="#" class="subscribe" style="display: block; position: relative; width: 100%;">
+              <input type="text" class="subscribe__input" placeholder="Enter Email Address" style="background-color: #fff; border: none; border-radius: 5px; color: #333; font-size: 15px; font-weight: 500; height: 60px; text-align: center; text-transform: capitalize; width: 100%; padding: 0 150px 0 20px;">
+              <button type="button" class="subscribe__btn" style="background-color: transparent; border-radius: 0 25px 25px 0; color: #01c7e9; cursor: pointer; font-size: 20px; height: 60px; position: absolute; right: 0; top: 0; width: 60px;">
+                <i class="fas fa-paper-plane" style="transition: all 0.3s ease 0s;"></i>
+              </button>
+            </form>
+          </div>
+          <div class="social_profile" style="margin-top: 40px;">
+            <ul style="list-style: none; margin: 0; padding: 0;">
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-facebook-f"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-twitter"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!--- END ROW -->
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12">
+        <p class="copyright" style="margin-top: 70px; padding-top: 40px; color: #fff; font-size: 15px; border-top: 1px solid rgba(255,255,255,0.4); text-align: center;">
+           <!--<a href="#" style="color: #01c7e9; transition: all 0.2s ease 0s;">-->
+               petworld.today</a>
+        </p>
+      </div>
+      <!--- END COL -->
+    </div>
+    <!--- END ROW -->
+  </div>
+  
+  <!--- END CONTAINER -->
+  
+  <script>
+  $(window).on('load', function() {
+    // Hide the loader after 2 seconds
+    $('#ctn-preloader').delay(1000).fadeOut('slow');
+    $('#preloader').delay(1000).fadeOut('slow', function() {
+      // Show the main content after the loader has disappeared
+      $('.main-content').fadeIn('slow');
+    });
+  });
+</script>
+  
+
+  </body>
+</html>

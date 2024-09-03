@@ -1,0 +1,327 @@
+<!--header animation-->
+<!--image animation-->
+<!--loder -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Care Services</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <script src="assets/js/script.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"/>
+            
+            <style>
+                a {
+    text-decoration: none;
+}
+.careerpage{
+ background-image: url("/assets/image/pet.png");
+    background-size: cover;      /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;         
+      animation: mymove 5s infinite;
+    min-height: 100vh;   
+      background-position: top left;
+
+}
+@keyframes mymove {
+  50% {background-position: center;}
+}
+
+</style>
+  </head>
+  <body>
+      
+<!--loaders start-->
+         <div class="loader-bg" id="preloader">
+  <div class="loader-p"  id="ctn-preloader">
+  <img src="/assets/image/Dog.png">	
+  </div>
+</div>
+
+<!--top to bottom btn-->
+
+<a id="topbutton"></a>
+      <!--loader end-->
+    <nav class="navbar">
+<img src="/assets/image/logo.png" alt="logo" class="img-responsive">
+      <!--<img src="" />-->
+      <ul class="ulsec" id="topnav">
+          
+        <li class="lisec"><a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li class="lisec"><a href="/contact.html" target="_blank">Contact</a></li>
+        
+  
+        
+        <!--service section-->
+        <li class="lisec" onclick="toggleVillageList()" id="fdfdf">
+  <a href="#">Service</a>
+   <ul class="homesec">
+  <li><a href="all-pets.html">All Pets</a></li>
+<li><a href="pets-detail.html">Pets Detail</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="faq.html">Faq page</a></li>
+<li><a href="pricing.html">Pricing Page</a></li>
+<li><a href="reservation.html">Reservation Page</a></li>
+<li><a href="ourteam.html">Our Team</a></li>
+<li><a href="our-blog.html">Our Blog</a></li>
+<li><a href="faq.html">Faq</a></li>
+<li><a href="blog.html">Blog Details</a></li>
+            </ul>
+        </li>
+        <!--service section end-->
+        <li class="lisec"><a href="/index.html" target="_blank">Career</a></li>
+        <li class="lisec"><a href="/Gallary.html" target="_blank">Gallery</a></li>
+             
+           <button class="btnlogin" onclick="popupFn()">
+Login
+</button>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    
+    
+    
+       <div class="contentpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-4">
+            <h5>Contact Page</h5>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="row" style="display: flex;">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <h5><a href="/index.html" target="_blank">Home</a></h5>
+                    <!--<h5>Back</h5>-->
+
+</div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="col-lg-6 col-md-6 col-8">
+<img src="/assets/image/pet.png" alt="image section" class="img-fluid" height="25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--career section start-->
+    
+<div class="careerpage">
+  
+<div class="container">
+        <div class="apply_box">
+            <h1>Job application<span class="small">
+                    (Web)
+                </span>
+            </h1>
+            <form>
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first name">First name</label>
+                        <input id="first name" placeholder="Enter  name">
+                    </div>
+                    <div class="form_control">
+                        <label for="Last name">Last name</label>
+                        <input id="Last name" placeholder="Last name">
+                    </div>
+                    <div class="form_control">
+                        <label for="email  ">Email</label>
+                        <input type="email
+                        " id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form_control">
+                        <label for="job">Job Role</label>
+                        <select id="job">
+                            <option value="">Pet Director</option>
+                             <option value="">Pet Director</option>
+                            <option value="">Pet2 Director</option>
+                            <option value="">Pet3 Director</option>
+                            <option value="">Pet4 Director</option>
+                            <option value="">Pet5 Director</option>
+                            <option value="">Pet6 Director</option>
+                        </select>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="address  ">Address</label>
+                        <textarea id="address" name="address" row="4" cols="50" placeholder="Enter address"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="city">City</label>
+                        <input name="city" " id=" city" placeholder="Enter city name">
+                    </div>
+                    <div class="form_control">
+                        <label for="pincode">pincode</label>
+                        <input type="number" id=" pincode" placeholder="Enter Pincode Number">
+                    </div>
+                    <div class="form_control">
+                        <label for="date">Date</label>
+                        <input value="2023-02-15" type="date" id=" date" placeholder="Enter city name">
+                    </div>
+                    <div class="form_control">
+                        <label for="Upload">Upload Your CV</label>
+                        <input type="file" id="upload" name="upload">
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit">Apply now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+                                         </div>
+    
+    
+    <!--career section end-->
+    
+    
+    
+    
+    
+    
+    
+     <!--footer start-->
+    <div class="footer" style="background: linear-gradient(#000000, #562525), #5e4e4e; padding-top: 80px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="single_footer" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Services
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Animal Rescue</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Humane Education</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Animal Hospital</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Street Animal Feeding</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Pricing Table</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Page Link
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+        
+          
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="/support.html" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Support</a></li>
+            <li><a href="/Term_condtion.html" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Terms & Conditions</a></li>
+            <li><a href="/privacy_polocy.html" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Privacy Policy</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Career</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">404 page</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Subscribe today
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <div class="signup_form" style="margin-top: 15px;">
+            <form action="#" class="subscribe" style="display: block; position: relative; width: 100%;">
+              <input type="text" class="subscribe__input" placeholder="Enter Email Address" style="background-color: #fff; border: none; border-radius: 5px; color: #333; font-size: 15px; font-weight: 500; height: 60px; text-align: center; text-transform: capitalize; width: 100%; padding: 0 150px 0 20px;">
+              <button type="button" class="subscribe__btn" style="background-color: transparent; border-radius: 0 25px 25px 0; color: #01c7e9; cursor: pointer; font-size: 20px; height: 60px; position: absolute; right: 0; top: 0; width: 60px;">
+                <i class="fas fa-paper-plane" style="transition: all 0.3s ease 0s;"></i>
+              </button>
+            </form>
+          </div>
+          <div class="social_profile" style="margin-top: 40px;">
+            <ul style="list-style: none; margin: 0; padding: 0;">
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-facebook-f"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-twitter"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--- END COL -->
+    </div>
+    <!--- END ROW -->
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12">
+        <p class="copyright" style="margin-top: 70px; padding-top: 40px; color: #fff; font-size: 15px; border-top: 1px solid rgba(255,255,255,0.4); text-align: center;">
+               petworld.today</a>
+        </p>
+      </div>
+      <!--- END COL -->
+    </div>
+    <!--- END ROW -->
+  </div>
+  
+  <!--- END CONTAINER -->
+  
+<script>
+  $(window).on('load', function() {
+    // Hide the loader after 2 seconds
+    $('#ctn-preloader').delay(2000).fadeOut('slow');
+    $('#preloader').delay(2000).fadeOut('slow', function() {
+        // Show the main content after the loader has disappeared
+        $('.main-content').fadeIn('slow');
+    });
+  });
+</script>
+
+
+
+<!--scroll to top btn-->
+<script>
+    var btn = $('#topbutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+
+
+<script>
+   function toggleVillageList() {
+        var villageList = document.querySelector("#fdfdf .homesec");
+        if (
+          villageList.style.display === "block" ||
+          villageList.style.display === ""
+        ) {
+          villageList.style.display = "none";
+        } else {
+          villageList.style.display = "block";
+        }
+      }
+    </script>
+
+
+  </body>
+</html>

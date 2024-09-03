@@ -1,0 +1,501 @@
+<!--header animation-->
+<!--image animation-->
+<!--loder -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Care Services</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+    <script src="assets/js/script.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+
+    <script>  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"/>
+            
+            <style>
+                a {
+    text-decoration: none;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member .social a + a {
+  margin-left: 8px;
+}
+
+            </style>
+  </head>
+  <body>
+      
+<!--loaders start-->
+         <div class="loader-bg" id="preloader">
+  <div class="loader-p"  id="ctn-preloader">
+  <img src="/assets/image/Dog.png">	
+  </div>
+</div>
+
+<!--top to bottom btn-->
+
+<a id="topbutton"></a>
+      <!--loader end-->
+    <nav class="navbar">
+<img src="/assets/image/logo.png" alt="logo" class="img-responsive">
+      <!--<img src="" />-->
+      <ul class="ulsec" id="topnav">
+          
+        <li class="lisec"><a href="/index.html" target="_blank">Home</a>
+        </li>
+        <li class="lisec"><a href="/contact.html" target="_blank">Contact</a></li>
+        
+  
+        
+        <!--service section-->
+        <li class="lisec" onclick="toggleVillageList()" id="fdfdf">
+  <a href="#">Service</a>
+  
+          <ul class="homesec">
+         <li><a href="all-pets.html">All Pets</a></li>
+<li><a href="pets-detail.html">Pets Detail</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="faq.html">Faq page</a></li>
+<li><a href="pricing.html">Pricing Page</a></li>
+<li><a href="reservation.html">Reservation Page</a></li>
+<li><a href="ourteam.html">Our Team</a></li>
+<li><a href="our-blog.html">Our Blog</a></li>
+<li><a href="faq.html">Faq</a></li>
+<li><a href="blog.html">Blog Details</a></li>
+            </ul>
+        </li>
+        <!--service section end-->
+        <li class="lisec"><a href="/index.html" target="_blank">Career</a></li>
+        <li class="lisec"><a href="/Gallary.html" target="_blank">Gallery</a></li>
+             
+           <button class="btnlogin" onclick="popupFn()">
+Login
+</button>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    
+    
+    
+    
+    
+     <div class="contentpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-4">
+            <h5>Contact Page</h5>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="row" style="display: flex;">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <h5><a href="/index.html" target="_blank">Home</a></h5>
+                    <!--<h5>Back</h5>-->
+
+</div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="col-lg-6 col-md-6 col-8">
+<img src="/assets/image/pet.png" alt="image section" class="img-fluid" height="25px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--team stat-->
+    
+    
+    <section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Team</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Product Manager</span>
+            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>CTO</span>
+            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+       
+          </div>
+        </div>
+      </div>
+         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+       
+          </div>
+        </div>
+      </div>
+         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+       
+          </div>
+        </div>
+      </div>
+         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+       
+          </div>
+        </div>
+      </div>
+         <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+       
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+    <!--team end-->
+    
+    
+    
+    <div class="footer" style="background: linear-gradient(#000000, #562525), #5e4e4e; padding-top: 80px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 col-xs-12">
+        <div class="single_footer" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Services
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Lorem Ipsum</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Simply dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">The printing and typesetting</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Standard dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Type specimen book</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Page Link
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Lorem Ipsum</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Simply dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">The printing and typesetting</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Standard dummy text</a></li>
+            <li><a href="#" style="color: #fff; transition: all 0.3s ease 0s; line-height: 36px; font-size: 15px; text-transform: capitalize;">Type specimen book</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--- END COL -->
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="single_footer single_footer_address" style="margin-bottom: 30px;">
+          <h4 style="color: #fff; margin-top: 0; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 20px;">
+            Subscribe today
+            <span style="content: ''; display: block; height: 2px; width: 40px; background: #fff; margin-top: 20px;"></span>
+          </h4>
+          <div class="signup_form" style="margin-top: 15px;">
+            <form action="#" class="subscribe" style="display: block; position: relative; width: 100%;">
+              <input type="text" class="subscribe__input" placeholder="Enter Email Address" style="background-color: #fff; border: none; border-radius: 5px; color: #333; font-size: 15px; font-weight: 500; height: 60px; text-align: center; text-transform: capitalize; width: 100%; padding: 0 150px 0 20px;">
+              <button type="button" class="subscribe__btn" style="background-color: transparent; border-radius: 0 25px 25px 0; color: #01c7e9; cursor: pointer; font-size: 20px; height: 60px; position: absolute; right: 0; top: 0; width: 60px;">
+                <i class="fas fa-paper-plane" style="transition: all 0.3s ease 0s;"></i>
+              </button>
+            </form>
+          </div>
+          <div class="social_profile" style="margin-top: 40px;">
+            <ul style="list-style: none; margin: 0; padding: 0;">
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-facebook-f"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-twitter"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-google-plus-g"></i></a></li>
+              <li style="float: left;"><a href="#" style="text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; margin: 0 5px; font-size: 18px; color: #fff; border-radius: 30px; width: 50px; height: 50px; line-height: 50px; display: block; border: 1px solid rgba(255,255,255,0.2);"> <i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!--- END ROW -->
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-xs-12">
+        <p class="copyright" style="margin-top: 70px; padding-top: 40px; color: #fff; font-size: 15px; border-top: 1px solid rgba(255,255,255,0.4); text-align: center;">
+           <!--<a href="#" style="color: #01c7e9; transition: all 0.2s ease 0s;">-->
+               petworld.today</a>
+        </p>
+      </div>
+      <!--- END COL -->
+    </div>
+    <!--- END ROW -->
+  </div>
+  
+  <!--- END CONTAINER -->
+  
+  <script>
+      
+      const cards = document.querySelectorAll(".grid-item");
+cards.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cards.forEach((el) => el.classList.remove("active"));
+    item.classList.add("active");
+  });
+});
+
+  </script>
+
+
+<script>
+  $(window).on('load', function() {
+    // Hide the loader after 2 seconds
+    $('#ctn-preloader').delay(1000).fadeOut('slow');
+    $('#preloader').delay(1000).fadeOut('slow', function() {
+      // Show the main content after the loader has disappeared
+      $('.main-content').fadeIn('slow');
+    });
+  });
+</script>
+      <script>
+    var btn = $('#topbutton');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+  </body>
+</html>
